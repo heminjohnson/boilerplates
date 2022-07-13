@@ -1,0 +1,11 @@
+.landing-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand {
+  display: flex;
+  text-align: center;
+}
