@@ -1,4 +1,4 @@
-name: Development
+name: Test PR Node Backend Typescript 1
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./deployments/node-backend-ts-1
+        working-directory: deployments/node-backend-ts-1
     steps:
       - name: "☁️ checkout repository"
         uses: actions/checkout@v2
@@ -29,6 +29,8 @@ jobs:
         run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
+        with:
+          working-directory: deployments/node-backend-ts-1
         uses: bahmutov/npm-install@v1
 
       - name: "🔍 run tests"
