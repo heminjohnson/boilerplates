@@ -26,6 +26,7 @@ jobs:
           node-version: 16
 
       - name: "🔧 install npm@latest"
+        working-directory: deployments/node-backend-ts-1
         run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
